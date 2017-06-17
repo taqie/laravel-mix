@@ -53,7 +53,7 @@ module.exports = function () {
                 options: {
                     name: path => {
                         if (! /node_modules|bower_components/.test(path)) {
-                            return 'images/[name].[ext]?[hash]';
+                            return 'images/[folder]/[name].[ext]?[hash]';
                         }
 
                         return 'images/vendor/' + path
